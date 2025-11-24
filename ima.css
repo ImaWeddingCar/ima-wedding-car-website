@@ -1,0 +1,1219 @@
+body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f8f8;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            max-width: 1100px;
+        }
+
+        .section-padding {
+            padding: 60px 0;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            color: #000000; /* Deep Purple/Indigo - Luxury Feel */
+            text-align: center;
+        }
+
+        /* --- Header & Navigation --- */
+        #main-header {
+            background: #fff;
+            color: #333;
+            padding: 15px 0;
+            border-bottom: 2px solid #E6E6FA;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        #main-header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            margin: 0;
+            font-size: 2.0em;
+        }
+        #navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        #navbar ul li a {
+            color: #333;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 500;
+            padding: 10px 15px;
+            display: block;
+        }
+        #navbar ul li a:hover {
+            color: #ec983e; /* Gold Accent */
+        }
+        .cta-btn {
+            background-color: #ee3bb8; /* Gold Accent */
+            color: white !important;
+            padding: 8px 15px !important;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .cta-btn:hover {
+            background-color: #da0387;
+        }
+        
+        /* --- Hero Section --- */
+/* --- A. Section Background and Car Image --- */
+ .hero {
+            background: url('Gemini_Generated_Image_9naeie9naeie9nae.png') no-repeat center center/cover;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+.hero-content {
+            text-align: center;
+        }
+.hero-content h2 {
+            font-size: 3em;
+            margin-bottom: 25px;
+            color: rgb(255, 255, 255);
+        }
+.hero-content p {
+            font-size: 1.8em;
+            margin-bottom: 25px;
+        }      
+
+      
+         /* --- Global Section Styles (assuming these are defined) --- */
+
+
+.section-subtitle {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #666;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Target the H3 specifically inside the #why-us section */
+#why-us h3 {
+    font-size: 2.5em; /* Use relative size for responsiveness */
+    /* You can also adjust the space above/below the heading */
+    margin-bottom: 25px;
+}
+
+/* --- Feature Grid Styling --- */
+.feature-grid {
+    /* Uses CSS Grid for a clean, flexible 3-column layout */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates three equal columns */
+    gap: 30px; /* Space between the items */
+    margin-top: 20px;
+    text-align: center;
+}
+
+.feature-item {
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px); /* Subtle lift on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.feature-item h4 {
+    font-family: 'Playfair Display', serif;
+    color: #e70550; /* Gold Accent */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    color: #555;
+    font-size: 0.95em;
+}
+
+/* Style for the icons (using emojis as placeholders) */
+.feature-item i {
+    font-size: 2.5em;
+    color: #4B0082; /* Deep Purple/Indigo - Luxury Feel */
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* Style for the call to action button beneath the grid */
+.feature-cta {
+    display: block;
+    width: fit-content;
+    margin: 100px auto 0 auto; /* Center the button below the grid */
+    
+}
+
+/* --- Mobile Responsiveness (Adjusts grid to a single column on small screens) --- */
+@media (max-width: 768px) {
+    .feature-grid {
+        /* Changes to a single column on smaller screens */
+        grid-template-columns: 1fr; 
+    }
+}
+
+/* --- A. Section Background and Car Image --- */
+
+
+        /* --- Buttons --- */
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            margin-top:0px;
+        }
+        .primary-btn {
+            background-color: #ee3bb8; /* Gold */
+            color: white;
+            border: 2px solid #ee3bb8;
+            
+        }
+        .primary-btn:hover {
+            background-color: #da0387;
+        }
+        .secondary-btn {
+            background-color: #fff;
+            color: #AA8C6B;
+            border: 2px solid #AA8C6B;
+        }
+        .secondary-btn:hover {
+            background-color: #AA8C6B;
+            color: white;
+        }
+
+                  /* --- Vehicle Showcase Block Styles --- */
+
+#secondary-showcase {
+    background-color: #f8f8f8; /* Light background for contrast */
+}
+
+.secondary-showcase-flex {
+    display: flex;
+    align-items: center; /* Vertically center the content and image */
+    justify-content: space-between;
+    gap: 50px; /* Space between the image and the text details */
+}
+
+/* --- A. Image Area Styles --- */
+.showcase-image-area {
+    flex: 1; /* Takes up one part of the flexible space */
+    max-width: 50%; /* Max width for image area */
+    text-align: center;
+}
+
+.showcase-car-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Adds depth */
+}
+
+/* --- B. Details Area Styles --- */
+.showcase-details-area {
+    flex: 1; /* Takes up one part of the flexible space */
+    max-width: 50%; /* Max width for details area */
+    text-align: left;
+    padding-left: 20px;
+}
+
+.showcase-category {
+    font-size: 0.9em;
+    color: #AA8C6B; /* Gold Accent */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.showcase-car-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    color: #4B0082; /* Deep Indigo/Purple */
+    margin: 0 0 15px 0;
+    text-align: left;
+}
+
+.showcase-description {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* --- C. Pricing Display --- */
+.showcase-pricing {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 10px;
+}
+
+.price-label {
+    font-size: 1.1em;
+    color: #777;
+    margin-right: 10px;
+}
+
+.price-value {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #333; /* Strong color for price */
+}
+
+.price-condition {
+    font-size: 0.8em;
+    color: #b66a19; /* Highlight condition text */
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.showcase-cta {
+    /* Ensures the button doesn't stretch and aligns correctly */
+    display: inline-block; 
+}
+
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 992px) {
+    .secondary-showcase-flex {
+        /* Stack content vertically on smaller screens */
+        flex-direction: column;
+        text-align: center;
+    }
+    .showcase-image-area, .showcase-details-area {
+        max-width: 60%; /* Allows elements to use full width */
+        padding-left: 0;
+    }
+    .showcase-details-area {
+        text-align: center;
+    }
+    .showcase-category, .showcase-car-name {
+        text-align: center; /* Center text when stacked */
+    }
+    .showcase-pricing {
+        justify-content: center; /* Center price display */
+    }
+}
+ 
+/* --- CSS for Animation --- */
+
+/* 1. INITIAL STATE (Hidden/Off-Screen) */
+.animate-block {
+    opacity: 0;
+    transform: translateY(50px); /* Start 50px below its final position */
+    transition: opacity 1s ease-out, transform 1s ease-out; /* Smooth 1-second transition */
+}
+
+/* 2. FINAL STATE (Visible/Animated) */
+.animate-block.is-visible {
+    opacity: 1;
+    transform: translateY(0); /* Move to its final, correct position */
+}
+
+/* 1. Define the Keyframes (the animation sequence) */
+@keyframes slideInFade {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Start 20px below its final position */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* End at its normal position */
+    }
+}
+
+/* 2. Define the base style for all animated H3 tags */
+h3.animate-text {
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Initially off-position */
+    /* Add a transition for general styling consistency (optional) */
+    transition: color 0.3s ease; 
+}
+
+/* 3. Define the Trigger Class */
+/* This class activates the animation defined in the keyframes */
+h3.animate-text.is-visible {
+    animation-name: slideInFade;
+    animation-duration: 1.2s; /* How long the animation takes */
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards; /* Holds the style of the last keyframe (opacity: 1) */
+}
+
+/* --- A. Section */
+/* --- Form Specific Styles --- */
+#quote h2 {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.quote-request-form {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* --- 2-Column Grid Layout (Key to the Screenshot Design) --- */
+.form-grid {
+    display: grid;
+    /* Creates two equal columns */
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; /* Space between rows and columns */
+    margin-bottom: 20px;
+}
+
+.quote-request-form input[type="text"],
+.quote-request-form input[type="email"],
+.quote-request-form input[type="tel"],
+.quote-request-form input[type="date"],
+.quote-request-form select {
+    /* Style for text inputs and dropdowns */
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    font-size: 16px;
+}
+
+.quote-request-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    resize: vertical;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+/* --- Decoration Toggle Styles --- */
+.decoration-toggle {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.decoration-toggle p {
+    font-weight: 500;
+    color: #333;
+    margin-right: 20px;
+}
+.deco-btn {
+    /* Base style for the toggle buttons */
+    padding: 10px 25px;
+    border: 1px solid #ccc;
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+    font-size: 1em;
+}
+.deco-btn:first-of-type {
+    border-right: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.deco-btn:last-of-type {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.deco-btn.active {
+    /* Style for the selected/active button */
+    background-color: #333;
+    color: white;
+    border-color: #333;
+}
+
+/* --- Submit Button Styles (Matching the screenshot color) --- */
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #ee3bb8; /* Deep Red/Maroon */
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 10px;
+}
+.submit-btn:hover {
+    background-color: #da0387;
+}
+
+/* --- 1. Base Navigation Container --- */
+/* Ensure the list is properly aligned with the logo in the header */
+#navbar-main {
+    display: flex; /* Use flex to align the list items */
+    align-items: center; 
+}
+
+#navbar-main ul {
+    list-style: none; /* 🛑 IMPORTANT: Removes the default bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Makes the list items horizontal */
+    align-items: center; /* Vertically aligns items within the navbar */
+}
+
+/* --- 2. Styling the Links and List Items --- */
+#navbar-main ul li {
+    margin-left: 25px; /* Adds space between menu items */
+    position: relative; /* Needed for positioning the border/active indicator */
+}
+
+#navbar-main ul li a {
+    color: #000000; /* Deep Purple/Indigo for the primary link color */
+    text-decoration: none; /* 🛑 IMPORTANT: Removes the default underline */
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.95em;
+    padding: 10px 0; /* Vertical padding */
+    display: block; /* Ensures padding/margin works well */
+    transition: color 0.3s ease;
+}
+
+#navbar-main ul li a:hover {
+    color: #AA8C6B; /* Gold accent color on hover */
+}
+
+/* --- 3. Styling the 'Book Now' CTA Button (Pink Box) --- */
+.cta-btn {
+    /* Target the button by its specific class (assuming you kept it) */
+    background-color: #ee3bb8 !important; /* Bright Pink/Crimson color from the screenshot */
+    color: white !important;
+    padding: 8px 15px !important; /* Smaller padding for a cleaner button */
+    border-radius: 4px;
+    font-weight: bold;
+    margin-left: 15px; /* Space between the last link and the button */
+    transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #da0387 !important; /* Slightly darker pink on hover */
+}
+
+/* 4. Ensure links in the pink box button look like a button, not a list item */
+#navbar-main ul li:last-child {
+    /* If the book now button is in the last <li>, remove margin for cleaner alignment */
+    margin-left: 10px;
+}
+/* ======================================================= */
+/* === DEFAULT (LAPTOP/DESKTOP SCREENS - > 768px) ======== */
+/* ======================================================= */
+
+/* 1. Ensure the full navigation bar is ALWAYS visible on large screens */
+#navbar-main {
+    display: block; 
+    /* Remove any mobile positioning styles (fixed, transform) from the base CSS */
+    position: static; 
+    transform: none;
+    transition: none;
+}
+
+/* 2. Ensure the toggle icon is ALWAYS hidden on large screens */
+.menu-toggle {
+    display: none;
+}
+
+
+/* ======================================================= */
+/* === MOBILE SCREENS (<= 768px) ========================= */
+/* ======================================================= */
+@media (max-width: 768px) {
+    
+    /* 1. Show the hamburger icon ONLY on mobile */
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 1.5em;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    /* 2. Hide the main navbar list by default, and set it up for sliding */
+    #navbar-main {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 70%; 
+        height: 100%;
+        background-color: white; 
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        
+        /* Slide the menu OFF-SCREEN to the right */
+        transform: translateX(100%); 
+        transition: transform 0.3s ease-in-out; 
+    }
+
+    /* 3. When the 'open' class is toggled by JS, slide it into view */
+    #navbar-main.open {
+        transform: translateX(0); 
+    }
+    
+    /* 4. Ensure the list items stack vertically */
+    #navbar-main ul {
+        flex-direction: column;
+        padding-top: 80px;
+    }
+    /* Add other mobile list styling here... */
+}
+
+/* --- Responsiveness for Mobile --- */
+@media (max-width: 768px) {
+    .form-grid {
+        /* Stack fields vertically on small screens */
+        grid-template-columns: 1fr; 
+    }
+    .decoration-toggle {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .decoration-toggle p {
+        margin-bottom: 10px;
+    }
+}
+
+.container {
+    width: 90%; /* GOOD: Uses percentage */
+    max-width: 1200px;
+}
+.form-grid {
+    grid-template-columns: 1fr 1fr; /* GOOD: Uses fractional units (1fr) */
+}
+
+/* --- 1. Desktop: Hide the Toggle Button --- */
+.menu-toggle {
+    display: none;
+}
+/* Ensure navigation is displayed normally on desktop */
+#navbar-main {
+    display: block; 
+}
+
+
+/* --- 2. Mobile Styles (max-width: 768px) --- */
+@media (max-width: 768px) {
+    
+    /* Show the hamburger icon */
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 1.5em;
+        cursor: pointer;
+        z-index: 1001; /* Ensure it's clickable */
+    }
+
+    /* Hide the desktop navigation links by default */
+    #navbar-main {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 70%; /* Take up 70% of the screen width */
+        height: 100%;
+        background-color: white; /* Menu background */
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        
+        /* 🛑 KEY: Slide the menu off-screen to the right by default */
+        transform: translateX(100%); 
+        transition: transform 0.3s ease-in-out; 
+    }
+
+    /* Style the open/active state */
+    #navbar-main.open {
+        transform: translateX(0); /* Slide the menu into view */
+    }
+
+    /* Style the list to be stacked */
+    #navbar-main ul {
+        flex-direction: column;
+        padding-top: 80px; /* Space from the top edge */
+    }
+
+    /* Style each link */
+    #navbar-main ul li {
+        border-bottom: 1px solid #eee;
+        width: 100%;
+    }
+    #navbar-main ul li a {
+        padding: 15px 25px;
+        text-align: left;
+    }
+}
+
+/* --- A. Animation Keyframes (If not already defined) --- */
+@keyframes slideUpFade {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* --- B. Base Animation Class (Applied to the section) --- */
+/* Add this class to your main stylesheet */
+.animate-block {
+    opacity: 0;
+    transform: translateY(50px); 
+    /* Set transition for smooth movement */
+    transition: opacity 1s ease-out, transform 1s ease-out; 
+}
+
+/* --- C. Trigger Class (The visible state) --- */
+.animate-block.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- D. Pink Button Style (Matching Toyota Taisor Screenshot) --- */
+/* Ensure the button matches the screenshot's color/style */
+.showcase-cta.primary-btn {
+    background-color: #ee3bb8; /* Bright Pink */
+    color: white;
+    border: none; /* No border for the solid button look */
+    padding: 12px 25px;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+.showcase-cta.primary-btn:hover {
+    background-color: #da0387; /* Darker Pink on hover */
+}
+
+/* --- A. About Us Hero Banner --- */
+#about-hero {
+    background: url('beautiful-bride.jpg') no-repeat center center/cover; 
+    height: 400px; /* Standard height for a section banner */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+/* Optional: Dark overlay for better text readability */
+#about-hero::before {
+    content: '';
+    color: #ccc;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    z-index: 1;
+}
+#about-hero .hero-content {
+    z-index: 2;
+}
+#about-hero h1 {
+    font-family: 'Playfair Display', serif;
+    color: #fffcfc;
+    font-size: 3.5em;
+    margin-bottom: 10px;
+}
+#about-hero p {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+/* --- B. Our Story Section --- */
+.story-flex {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.story-text {
+    flex: 1;
+}
+.story-image {
+    flex: 1;
+    max-width: 35%;
+}
+.story-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.story-text p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+/* --- C. Mission and Values (Dark Background) --- */
+.dark-bg {
+    background-color: #2d2d2e; /* Deep Indigo/Purple */
+    color: white;
+}
+.dark-bg .section-title {
+    color: white;
+    margin-bottom: 40px;
+}
+.mission-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    gap: 30px;
+}
+.mission-item {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+}
+.mission-item h4 {
+    font-family: 'Playfair Display', serif;
+    color: #dac401; /* Gold Accent */
+    margin-top: 0;
+    font-size: 1.4em;
+}
+.mission-item p {
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+/* --- D. Mobile Responsiveness --- */
+@media (max-width: 992px) {
+    .story-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+    .story-image, .story-text {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+    .mission-grid {
+        grid-template-columns: 1fr; /* Stack columns on tablets/phones */
+    }
+}
+
+        /* --- Footer --- */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9em;
+        }
+        footer a {
+            color: #AA8C6B;
+            text-decoration: none;
+        }
+
+/* Ensure the text color is light (e.g., white) and positioned above the overlay */
+
+
+/* Example of a light gold/accent color if you prefer: */
+/*
+#contact-us h2 {
+    color: #AA8C6B; 
+}
+*/
+
+#contact-us {
+    /* 1. Set the background image and its properties */
+    background: url('pngtree-tmall-wedding-fair-wedding-car-city.png') no-repeat center center;
+    background-size: cover; /* Ensures the image covers the entire section */
+    
+    /* 2. Add an overlay for better text readability */
+    position: relative;
+    z-index: 1; /* Ensures content is above the overlay */
+    
+    /* Add extra padding to make the image visible */
+    padding: 80px 0; /* Increased padding */
+}
+
+/* Optional: Add a subtle color overlay for contrast */
+#contact-us::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(238, 221, 221, 0.45); /* Dark semi-transparent overlay */
+    z-index: 2; /* Overlay must be above the image, but below text */
+}
+
+/* 3. Ensure the text is visible and styled correctly */
+#contact-us h2, 
+#contact-us p.section-subtitle {
+    color: rgb(5, 5, 5); /* Change text color to white for contrast */
+    z-index: 5; /* Ensure text is above the overlay */
+    position: relative; /* Needed to respect z-index */
+}
+
+/* 4. Keep the main container centered */
+#contact-us .container {
+    z-index: 5;
+    position: relative;
+}
+/* --- A. Main Layout (Two-Column Grid) --- */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr; /* Info takes 1 part, Form takes 1.5 parts (Form is wider) */
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* --- B. Contact Info Panel (Left Column) --- */
+.contact-info-panel {
+    background-color: #f6feff;
+    padding: 80px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+.contact-info-panel h3 {
+    color: #8f048f; /* Deep Indigo/Purple */
+    margin-top: 0;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #AA8C6B; /* Gold Accent line */
+    padding-bottom: 10px;
+}
+.contact-detail-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+.contact-detail-item i {
+    font-size: 1.5em;
+    color: #AA8C6B;
+    margin-right: 15px;
+    line-height: 1.5;
+}
+.contact-detail-item p {
+    font-weight: 500;
+    color: #333;
+    margin: 0 0 5px 0;
+}
+.contact-detail-item a, .contact-detail-item span {
+    color: #555;
+    text-decoration: none;
+    font-size: 1em;
+}
+.location-map {
+    margin-top: 30px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.location-map iframe {
+    display: block;
+}
+
+/* --- C. Contact Form Panel (Right Column) --- */
+.contact-form-panel h3 {
+    color: #8f048f;
+    margin-bottom: 30px;
+}
+.contact-form-panel input,
+.contact-form-panel select,
+.contact-form-panel textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+.form-row input, .form-row select {
+    flex: 1; /* Makes inputs share the row equally */
+}
+.contact-form-panel textarea {
+    resize: vertical;
+}
+
+/* --- D. Submit Button and Status Message --- */
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #E91E63; /* Pink CTA color */
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.submit-btn:hover {
+    background-color: #C2185B;
+}
+.status-message {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+    display: none; /* Hidden by default, shown by JS */
+}
+.status-message.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+.status-message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* --- E. Mobile Responsiveness --- */
+@media (max-width: 992px) {
+    .contact-grid {
+        grid-template-columns: 1fr; /* Stack the two columns vertically */
+        gap: 30px;
+    }
+    .form-row {
+        flex-direction: column; /* Stack inputs within the row */
+        gap: 0;
+    }
+}
+
+/* --- Social Media Button Styling --- */
+
+.social-links {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    padding-left: 15px; /* Aligns with the detail-group border line */
+}
+
+.social-links h4 {
+    color: #333;
+    font-size: 1.1em;
+    font-weight: 700;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+.social-btn {
+    display: block; /* Make buttons stack vertically */
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    font-size: 1em;
+    font-weight: 600;
+    color: white !important; /* Force white text */
+    transition: opacity 0.2s, transform 0.2s;
+}
+
+.social-btn i {
+    margin-right: 8px;
+}
+
+.social-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+/* Specific Brand Colors for Clarity */
+.social-btn.facebook {
+    background-color: #3b5998; /* Facebook Blue */
+}
+
+.social-btn.instagram {
+    /* Use a gradient or a strong brand color that suggests Instagram */
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.social-btn.whatsapp {
+    background-color: #25d366; /* WhatsApp Green */
+}
+
+/* --- Add TikTok Styling to your existing Social Button CSS --- */
+
+.social-btn.tiktok {
+    background-color: #000000; /* TikTok Black */
+}
+
+/* Optional: Add a subtle text shadow to mimic the TikTok logo effect */
+.social-btn.tiktok i {
+    text-shadow: 1px 1px 0px #25F4EE, -1px -1px 0px #FF0050; 
+}
+
+/* --- OPTION 1: Elegant Bordered Home Button Style --- */
+
+/* --- Specific Styling for the Gallery Button --- */
+.new-cta-btn.gallery-btn {
+    background-color: black;
+    border: 2px solid transparent; /* Gold accent color border */
+    color: #ffffff; /* Deep purple text */
+    /* Add a subtle shadow for depth */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); 
+}
+
+.new-cta-btn.gallery-btn:hover {
+    background-color: #302f2e; /* Fills with Gold accent on hover */
+    color: white; /* Text turns white */
+    /* Lift effect on hover */
+    box-shadow: 0 6px 15px rgba(48, 48, 47, 0.5); 
+    transform: translateY(-2px); 
+}
+
+
+/* ============================================= */
+/* === FOOTER STYLES (Matching Screenshot) ===== */
+/* ============================================= */
+
+footer {
+    background-color: #1a1a1a; /* Very Dark Background */
+    color: #cccccc; /* Light Gray Text */
+    padding-top: 50px;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+/* --- Top Section Grid Layout (Logo vs. Details) --- */
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Mission column wider than Details column */
+    gap: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-logo {
+    max-width: 250px; /* Adjust size of your logo */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.footer-mission {
+    padding-right: 500px;
+}
+
+.mission-text {
+    line-height: 1.7;
+    font-size: 1em;
+    max-width: 1000px;
+}
+.mission-text strong {
+    color: white; /* Highlights keywords */
+}
+
+/* --- Right Column (Details) --- */
+.footer-details {
+    line-height: 1.5;
+    font-size: 1.50em;
+}
+.trust-text {
+    margin-bottom: 50px;
+}
+.contact-info h4 {
+    font-weight: 900;
+    color: white;
+    margin: 15px 0 3px 0;
+    font-size: 1em;
+}
+.contact-info p {
+    margin: 0 0 10px 0;
+}
+/* Ensure labels like "Phone" and "Email" look like the screenshot */
+.phone-label, .email-label {
+    display: inline;
+    margin-right: 5px;
+}
+
+/* --- Bottom Bar (Links, Copyright, Social) --- */
+.footer-bottom {
+    padding: 15px 0;
+    font-size: 1.08em;
+    background-color: #121212; /* Slightly darker band for the bottom bar */
+}
+
+.footer-bottom-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links a {
+    color: #cccccc;
+    text-decoration: none;
+    margin-right: 15px;
+    transition: color 0.2s;
+}
+.footer-links a:hover {
+    color: #E91E63; /* Pink accent on hover */
+}
+
+/* --- Social Media Icons --- */
+.footer-social {
+    display: flex;
+    gap: 5px;
+}
+.social-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background-color: #333; /* Dark background for icons */
+    color: white !important;
+    border-radius: 4px;
+    font-size: 1.1em;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+/* Match the colors used in the screenshot for the specific social icons */
+.social-icon.facebook { background-color: #3b5998; }
+.social-icon.instagram { background-color: #bc1888; }
+.social-icon.tiktok { background-color: #000000; }
+
+.social-icon:hover {
+    background-color: #E91E63; /* Pink accent on hover */
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 1fr; /* Stack columns on mobile */
+        gap: 30px;
+    }
+    .footer-mission {
+        padding-right: 0;
+    }
+    .footer-bottom-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-links, .copyright-text, .footer-social {
+        margin-bottom: 10px;
+    }
+}
+/* You would also need to ensure the button's parent container is a block element (like a div) */
