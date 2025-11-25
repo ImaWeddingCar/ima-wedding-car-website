@@ -873,6 +873,23 @@ h3.animate-text.is-visible {
     z-index: 5; /* Ensure text is above the overlay */
     position: relative; /* Needed to respect z-index */
 }
+/* Default desktop style */
+.contact-container {
+    display: flex; /* Side-by-side */
+}
+
+/* Style to apply when screen is 600px or smaller */
+@media screen and (max-width: 600px) {
+    .contact-container {
+        display: block; /* Stack vertically */
+        padding: 0 10px; /* Add some padding to prevent edge cropping */
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 /* 4. Keep the main container centered */
 #contact-us .container {
@@ -890,7 +907,7 @@ h3.animate-text.is-visible {
 /* --- B. Contact Info Panel (Left Column) --- */
 .contact-info-panel {
     background-color: #f6feff;
-    padding: 80px;
+    padding: 10px;
     border-radius: 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
@@ -1216,4 +1233,5 @@ footer {
         margin-bottom: 10px;
     }
 }
+
 /* You would also need to ensure the button's parent container is a block element (like a div) */
