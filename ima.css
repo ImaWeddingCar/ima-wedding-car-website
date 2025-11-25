@@ -71,7 +71,30 @@ body {
             background-color: #da0387;
         }
         
-        /* --- Hero Section --- */
+           /* 1. Define the Keyframes */
+@keyframes background-zoom {
+    0% {
+        /* Start scale at normal size */
+        transform: scale(1.10);
+    }
+    100% {
+        /* End scale slightly zoomed in */
+        transform: scale(1.0); 
+    }
+}
+
+/* 2. Apply the Keyframes to the Hero Background Image */
+.hero {
+    /* Keep existing styles */
+    background: url('Gemini_Generated_Image_9naeie9naeie9nae.png') no-repeat center center/cover;
+    height: 500px;
+    
+    /* New: Apply Animation */
+    animation: background-zoom 5s ease-in-out infinite alternate;
+    
+    /* Important for scaling background images */
+    overflow: hidden; 
+}    /* --- Hero Section --- */
 /* --- A. Section Background and Car Image --- */
  .hero {
             background: url('Gemini_Generated_Image_9naeie9naeie9nae.png') no-repeat center center/cover;
@@ -213,12 +236,32 @@ body {
     background-color: #f8f8f8; /* Light background for contrast */
 }
 
+/* 1. Define the Fade-In Keyframes */
+@keyframes slide-up-fade {
+    0% {
+        opacity: 0; /* Start completely transparent */
+        transform: translateY(100px); /* Start 20 pixels below final position */
+    }
+    100% {
+        opacity: 1; /* End fully visible */
+        transform: translateY(0); /* End at final position */
+    }
+}
+
+/* 2. Apply the Animation to the Flex Container */
+
+
+
 .secondary-showcase-flex {
     display: flex;
     align-items: center; /* Vertically center the content and image */
     justify-content: space-between;
     gap: 50px; /* Space between the image and the text details */
-}
+
+           /* New: Apply Animation */
+    animation: slide-up-fade 1.2s ease-out forwards; /* 1.2 seconds duration, smooth finish */
+}     
+
 
 /* --- A. Image Area Styles --- */
 .showcase-image-area {
@@ -1235,3 +1278,4 @@ footer {
 }
 
 /* You would also need to ensure the button's parent container is a block element (like a div) */
+
